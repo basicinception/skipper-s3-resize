@@ -6,7 +6,7 @@ Based on SailsJS Skipper S3 adapter for receiving [upstreams](https://github.com
 
 1. First, make sure you have graphicmagick installed.
 
-2.
+2. Install via npm:
 ```
 $ npm install skipper-s3 --save
 ```
