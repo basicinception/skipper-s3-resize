@@ -217,9 +217,13 @@ module.exports = function SkipperS3 (globalOpts) {
     // into this receiver.  (filename === `__newFile.filename`).
     receiver__._write = function onFile(__newFile, encoding, next) {
 
+      var startedAt = new Date();
+      var width = options.resize.width || 200;
+      var height = options.resize.height || 200;
+      var gmOptions = options.resize.options || '';
       // Allow `tmpdir` for knox-mpu to be passed in, or default
       // to `.tmp/s3-upload-part-queue`
-      gm(__newFile).resize(200, 200, "!").stream(function (err, stdout, stderr) {
+      gm(__newFile).resize(width, height, gmOptions).stream(function (err, stdout, stderr) {
         if (err) return next(err);
 
         options.tmpdir = options.tmpdir || path.resolve(process.cwd(), '.tmp/s3-upload-part-queue');
