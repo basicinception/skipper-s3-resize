@@ -31,7 +31,12 @@
       adapter: require('skipper-s3-resize'),
       key: <YOUR_S3_KEY>,
       secret: <YOUR_S3_SECRET>,
-      bucket: <YOUR_S3_BUCKET>
+      bucket: <YOUR_S3_BUCKET>,
+      resize: {
+        width: <WIDTH>,
+        height: <HEIGHT>,
+        options: <GRAPHICMAGICK_OPTIONS>
+      }
     }, function(err, uploadedFiles) {
       if(err) return res.serverError(err);
         res.ok();
