@@ -9,7 +9,7 @@
   "author": "miehilmie",
   "license": "MIT",
   "dependencies": {
-    "lodash": "~2.4.1",
+    "lodash": "~3.10.1",
     "fs-extra": "~0.8.1",
     "knox-mpu-alt": "~0.1.9",
     "knox": "~0.8.9",
