@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "miehilmie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miehilmie/skipper-s3-resize.git"
+  },
   "license": "MIT",
   "dependencies": {
     "lodash": "~3.10.1",
