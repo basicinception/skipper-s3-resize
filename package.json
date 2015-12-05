@@ -1,7 +1,7 @@
 {
   "name": "skipper-s3-resize",
   "version": "1.0.0",
-  "description": "Streaming file uploads to S3",
+  "description": "Streaming file uploads to S3 and resize images",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,27 +1,17 @@
 # skipper-s3-resize
+
+Based on SailsJS Skipper S3 adapter for receiving [upstreams](https://github.com/balderdashy/skipper#what-are-upstreams) with a twist: Images will be resized before uploading using GraphicMagick.
+
 ## Installation
 
-1. First, make sure you have graphicmagick installed.
-2. To use skipper-s3-resize module, simply paste skipper-s3-resize folder to any folder accessible by the server.
-2. For example, paste the package inside appRoot > private
+First of all, make sure you have graphicmagick installed.
+
+To install it using npm:
 ```
-- app.js
-- node_modules
-...
-...
-- private
--- skipper-s3-resize
---- package.json
---- index.js
+$ npm install skipper-s3-resize --save
 ```
-3. Then, edit your project ``package.json`` as following
-```javascript
-"dependencies": {
-  "skipper-s3-resize": "file:./private/skipper-s3-resize"
-}
-```
-4. Run ``npm install``.
-5. You will now have the package installed.
+
+Also make sure you have skipper itself [installed as your body parser](http://beta.sailsjs.org/#/documentation/concepts/Middleware?q=adding-or-overriding-http-middleware).  This is the default configuration in [Sails](https://github.com/balderdashy/sails) as of v0.10.
 
 ## Usage
 1. In Controller:
