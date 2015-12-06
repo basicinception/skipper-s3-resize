@@ -9,7 +9,7 @@
   "author": "miehilmie",
   "repository": {
     "type": "git",
-    "url": "https://github.com/miehilmie/skipper-s3-resize.git"
+    "url": "https://github.com/basicinception/skipper-s3-resize.git"
   },
   "license": "MIT",
   "dependencies": {
